@@ -7442,6 +7442,12 @@
 		(uuid "8cedb5d5-5e96-4bd8-8b76-c52924776ffb")
 	)
 	(junction
+		(at 53.34 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d641997-00ee-49b5-b524-2b2a049eb409")
+	)
+	(junction
 		(at 27.94 173.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9147,7 +9153,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 104.14) (xy 74.93 105.41)
+			(xy 74.93 96.52) (xy 74.93 105.41)
 		)
 		(stroke
 			(width 0)
@@ -9914,6 +9920,16 @@
 			(type default)
 		)
 		(uuid "68e1d3d6-f6d1-4a00-ba15-a993eb81d73a")
+	)
+	(wire
+		(pts
+			(xy 53.34 138.43) (xy 58.42 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69361bc8-d4dc-45b5-b247-d64166e5eb9f")
 	)
 	(wire
 		(pts
@@ -14427,6 +14443,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "USRLED4"
+		(shape input)
+		(at 58.42 138.43 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fcfdb9ec-86c0-41cc-badb-f2f17d90f9c2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.8718 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -18948,7 +18986,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 139.954 200.152 0)
 			(effects
 				(font
@@ -19629,7 +19667,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e95c899-265c-41e5-a82f-310a4af5c4ba")
 		(property "Reference" "U1"
-			(at 126.6541 24.13 0)
+			(at 126.6033 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19637,8 +19675,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AD9201"
-			(at 126.6541 26.67 0)
+		(property "Value" "HT9201ARSZ"
+			(at 126.6033 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21438,6 +21476,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_2_Open")
+		(at 53.34 134.62 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "8084e709-e8e9-4634-b0a1-8f744f57900c")
+		(property "Reference" "JP11"
+			(at 50.546 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_2_Open"
+			(at 49.53 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
+			(at 53.34 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Solder Jumper, 2-pole, open"
+			(at 53.34 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "949d7409-028c-4b3a-9421-61a32b2ba1fb")
+		)
+		(pin "1"
+			(uuid "e165154d-b498-4bd1-abad-d257611b5f1d")
+		)
+		(instances
+			(project "PhaseLatch"
+				(path "/295f680c-5198-4d09-b94a-db6b0a3fead7"
+					(reference "JP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 87.63 74.93 0)
 		(unit 1)
@@ -22800,7 +22906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 122.174 200.152 0)
 			(effects
 				(font
@@ -24395,7 +24501,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 60.706 121.412 0)
 			(effects
 				(font
@@ -25057,7 +25163,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 89.916 121.412 0)
 			(effects
 				(font
@@ -26533,7 +26639,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 74.93 104.14 0)
+		(at 74.93 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26542,7 +26648,7 @@
 		(fields_autoplaced yes)
 		(uuid "f8acb505-2446-44e6-8f00-9bdc4ec97d54")
 		(property "Reference" "#PWR04"
-			(at 74.93 107.95 0)
+			(at 74.93 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26551,7 +26657,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 74.93 99.06 0)
+			(at 74.93 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26559,7 +26665,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 74.93 104.14 0)
+			(at 74.93 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26568,7 +26674,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 104.14 0)
+			(at 74.93 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26577,7 +26683,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 74.93 104.14 0)
+			(at 74.93 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
