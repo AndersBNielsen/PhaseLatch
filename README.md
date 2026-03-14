@@ -2,6 +2,8 @@
 
 PhaseLatch – 6502-Interfaced High-Speed ADC for Experimental SDR
 
+Blog post & video: https://abnielsen.com/2025/12/24/6502-and-a-20mhz-adc-takes-up-the-challenge/
+
 PhaseLatch is an open-source hardware project that explores how far a classic MOS 6502-class CPU can be pushed into modern signal-processing territory. The board implements a dual-channel, 10-bit, 20 MSPS analog-to-digital converter with a straight binary parallel output, allowing the ADC to be memory-mapped directly onto a 6502 (8 bit) data bus.
 
 Unlike typical SDR designs that rely on high-performance microcontrollers or FPGAs, PhaseLatch intentionally interfaces high-speed conversion hardware with a severely resource-constrained 8-bit CPU. This makes it a platform for experimenting with timing limits, bus contention, memory expansion, and minimalist DSP techniques such as Goertzel tone detection executed entirely on the 6502.
