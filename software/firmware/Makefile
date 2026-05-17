@@ -12,6 +12,7 @@ CFLAGS = -mmcs51 --std-sdcc11 --opt-code-size
 BUILD = build
 OBJS  = $(BUILD)/main.rel $(BUILD)/descriptors.rel $(BUILD)/setup_callbacks.rel
 LIBS  = $(FX2LIB)/lib/fx2.lib
+FLASH_DELAY ?= 0.5
 
 all: $(BUILD)/$(PROJ).ihx
 
@@ -33,7 +34,12 @@ $(BUILD)/$(PROJ).ihx: $(OBJS)
 flash: $(BUILD)/$(PROJ).ihx
 	cycfx2prog prg:$< run
 
+flash-twice: $(BUILD)/$(PROJ).ihx
+	cycfx2prog prg:$< run
+	sleep $(FLASH_DELAY)
+	cycfx2prog prg:$< run
+
 clean:
 	rm -rf $(BUILD)
 
-.PHONY: all clean flash
+.PHONY: all clean flash flash-twice

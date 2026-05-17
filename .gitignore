@@ -37,3 +37,5 @@ production/backups/PhaseLatch_2025-09-17_20-17-30.zip
 production/backups/PhaseLatch_2025-09-19_06-47-47.zip
 /production/backups
 .DS_Store
+software/firmware/tools/__pycache__/fx2_si5351_tool.cpython-313.pyc
+/software/firmware/build/*
